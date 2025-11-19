@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class ConversionBinarioEntero {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Selecciona una opción:");
+        System.out.println("1. Convertir binario a entero");
+        System.out.println("2. Convertir entero a binario");
+        int opcion = scanner.nextInt();
+
+        if (opcion == 1) {
+            System.out.print("Ingresa el número binario: ");
+            String binario = scanner.next();
+            int entero = binarioAEntero(binario);
+            System.out.println("El número entero es: " + entero);
+        } else if (opcion == 2) {
+            System.out.print("Ingresa el número entero: ");
+            int entero = scanner.nextInt();
+            String binario = enteroABinario(entero);
+            System.out.println("El número binario es: " + binario);
+        } else {
+            System.out.println("Opción inválida.");
+        }
+
+        scanner.close();
+    }
+
+    // Método para convertir binario a entero
+    public static int binarioAEntero(String binario) {
+        int entero = 0;
+        int longitud = binario.length();
+
+        for (int i = 0; i < longitud; i++) {
+            char bit = binario.charAt(i);
+            if (bit == '1') {
+                // Calcula el valor del bit en la posición correspondiente
+                entero += (int) Math.pow(2, longitud - 1 - i);
+            }
+        }
+
+        return entero;
+    }
+
+    // Método para convertir entero a binario
+    public static String enteroABinario(int entero) {
+        if (entero == 0) {
+            return "0";
+        }
+
+        StringBuilder binario = new StringBuilder();
+
+        while (entero > 0) {
+            int residuo = entero % 2;
+            binario.insert(0, residuo); // Inserta al inicio para mantener el orden
+            entero /= 2;
+        }
+
+        return binario.toString();
+    }
+}
