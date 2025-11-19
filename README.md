@@ -34,4 +34,5 @@ Incluye:
 - Juan David Valera Montesinos
 - Ángel Isidro Arteaga Aguilar
 - Yahir Mendoza Barrera
-- 
+- José Alejandro Villeda Cruz
+- Emilio Ithait García Guzmán
