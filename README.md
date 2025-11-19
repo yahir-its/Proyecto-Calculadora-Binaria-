@@ -18,3 +18,17 @@ Incluye:
 - Validación de datos
 - Conversión binaria
 - Ejemplos de corridas
+
+# Componentes del circuito físico
+- Para el prototipo físico se emplearon:
+- Protoboard
+- LEDs (indicadores)
+- Compuerta XOR
+- Compuerta AND
+- Fuente de alimentación
+- Cables de conexión
+
+
+# integrantes
+- Luis Daniel Angeles Moreno
+- Juan David Valera Montesinos
