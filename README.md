@@ -32,3 +32,6 @@ Incluye:
 # integrantes
 - Luis Daniel Angeles Moreno
 - Juan David Valera Montesinos
+- Ángel Isidro Arteaga Aguilar
+- Yahir Mendoza Barrera
+- 
